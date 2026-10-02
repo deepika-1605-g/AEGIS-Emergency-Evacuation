@@ -1,0 +1,36 @@
+{
+  "locations": {
+    "G1": "Entrance",
+    "G2": "Lobby",
+    "G3": "Room 101",
+    "G4": "Corridor A",
+    "G5": "Staircase A",
+    "G6": "Exit A",
+    "F1": "Room 201",
+    "F2": "Corridor B",
+    "F3": "Room 202",
+    "F4": "Staircase B",
+    "F5": "Exit B"
+  },
+
+  "connections": [
+    ["G1", "G2", 20],
+    ["G2", "G3", 30],
+    ["G2", "G4", 25],
+    ["G4", "G5", 40],
+    ["G5", "G6", 30],
+
+    ["G5", "F4", 20],
+    ["F4", "F1", 25],
+    ["F4", "F2", 30],
+    ["F2", "F3", 20],
+    ["F2", "F5", 35],
+
+    ["F1", "F2", 20]
+  ],
+
+  "exits": [
+    "G6",
+    "F5"
+  ]
+}
